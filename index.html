@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMI and Body Fat Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>BMI and Body Fat Percentage Calculator</h1>
+
+    <!-- Gender Selection -->
+    <div class="gender-selection">
+      <button id="male-btn" class="btn">Male</button>
+      <button id="female-btn" class="btn">Female</button>
+    </div>
+
+    <!-- Calculator Form (Hidden by Default) -->
+    <form id="calculator-form" class="hidden">
+      <label for="height">Height (cm):</label>
+      <input type="number" id="height" placeholder="Enter height in cm" required>
+
+      <label for="weight">Weight (kg):</label>
+      <input type="number" id="weight" placeholder="Enter weight in kg" required>
+
+      <button type="button" id="calculate-btn" class="btn">Calculate</button>
+      <button type="reset" class="btn">Back</button>
+    </form>
+
+    <!-- Results Section (Hidden by Default) -->
+    <div id="results" class="hidden">
+      <h2>Results:</h2>
+      <p><strong>BMI:</strong> <span id="bmi-result"></span></p>
+      <p><strong>Body Fat Percentage:</strong> <span id="fat-percentage-result"></span>%</p>
+    </div>
+
+    <!-- Matrices Section (Hidden by Default) -->
+    <div id="matrices" class="hidden">
+      <h2>BMI Matrix:</h2>
+      <table id="bmi-matrix" class="matrix-table"></table>
+
+      <h2>Body Fat Percentage Matrix:</h2>
+      <table id="fat-matrix" class="matrix-table"></table>
+    </div>
+  </div>
+
+  <!-- Link to JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
